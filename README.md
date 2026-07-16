@@ -2,51 +2,48 @@
 
 Football IQ AI is an explainable football intelligence platform.
 
-Its core rule is simple:
+> Every prediction must explain why.
 
-> Every prediction must explain **why**.
+## Genesis v0.1 — Pack 4
 
-## Genesis v0.1 — Pack 1
+Pack 4 adds the **Football Knowledge Builder**: a controlled, auditable workflow that turns the individual API-Football sync endpoints from Pack 3 into repeatable knowledge-building runs.
 
-This foundation includes:
+It includes:
 
-- FastAPI backend
-- PostgreSQL
-- Docker Compose
-- Configuration from environment variables
-- Structured application logging
-- Database health check
-- `/`, `/health`, and `/version` endpoints
-- Automated tests
+- curated competition catalog;
+- build plans before quota is consumed;
+- dry-run mode that makes no provider requests;
+- persistent run history;
+- per-competition success and failure tracking;
+- safe reruns and duplicate-resistant imports;
+- request pacing between competitions;
+- optional stop-on-error behavior;
+- detailed run inspection endpoints.
 
-## First run
+Pack 4 can be installed before obtaining an API key. Without a key, use the catalog, plan, and dry-run endpoints.
 
-1. Copy `.env.example` to `.env`.
-2. Open a terminal in the repository root.
-3. Run:
-
-```powershell
-docker compose up --build
-```
-
-4. Open:
-
-- API documentation: http://localhost:8000/docs
-- Health check: http://localhost:8000/health
-- Version: http://localhost:8000/version
-
-## Stop the application
+## Run
 
 ```powershell
 docker compose down
+docker compose up --build
 ```
 
-To also delete the local PostgreSQL data volume:
+Open:
 
-```powershell
-docker compose down -v
+- Swagger: http://localhost:8000/docs
+- Catalog: http://localhost:8000/builder/catalog
+- Run history: http://localhost:8000/builder/runs
+
+## Safe test without an API key
+
+Use `POST /builder/build?dry_run=true` with:
+
+```json
+{
+  "season": 2025,
+  "competition_ids": [39],
+  "include_countries": true,
+  "stop_on_error": false
+}
 ```
-
-## Project status
-
-Release: **Genesis v0.1 — Pack 1**

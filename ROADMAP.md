@@ -1,23 +1,18 @@
 # Roadmap
 
 ## v0.1 — Genesis
-Working backend, database, Docker environment, tests, and documentation.
+- Pack 1: Application foundation ✅
+- Pack 2: Football Knowledge Base ✅
+- Pack 3: API-Football Data Acquisition Engine ✅
+- Pack 4: Football Knowledge Builder ✅
+- Pack 5: Team DNA foundation
+- Pack 6: Match Importance Index
 
 ## v0.2 — Knowledge
-Countries, competitions, seasons, teams, players, managers, referees, stadiums,
-fixtures, injuries, and transfers.
+Players, lineups, injuries, transfers, match statistics, referee behavior, historical coverage, and data quality scoring.
 
 ## v0.3 — Context
-Match Importance Index, referee context, weather, fatigue, psychology,
-home influence, and transfer impact.
+Weather, fatigue, psychology, home influence, tactical matchup, transfer impact, and squad continuity.
 
 ## v0.4 — Team DNA
-Season-specific team identity: attack, defense, pressing, possession, tempo,
-counterattack, set pieces, discipline, creativity, squad depth, continuity,
-manager influence, and tactical flexibility.
-
-## v0.5 — Athena
-Evidence, counter-evidence, risk, debate, confidence, and verdict.
-
-## v1.0 — First Kick
-Public explainable football intelligence MVP.
+Season-specific identity covering attack, defense, pressing, possession, tempo, counterattack, set pieces, discipline, creativity, squad depth, continuity, manager influence, and tactical flexibility.

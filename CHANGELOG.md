@@ -1,10 +1,15 @@
 # Changelog
 
-## 0.1.0 — Genesis Pack 1
+## 0.1.3 — Genesis Pack 4
 
-- Added FastAPI application foundation.
-- Added PostgreSQL service through Docker Compose.
-- Added database readiness checks.
-- Added environment-based configuration.
-- Added health, version, and root endpoints.
-- Added automated API tests.
+- Added Football Knowledge Builder.
+- Added curated competition catalog.
+- Added persistent build runs and build items.
+- Added dry-run planning and API request estimates.
+- Added controlled multi-competition synchronization.
+- Added build history and detailed run inspection.
+- Added configurable request pacing and stop-on-error behavior.
+
+## 0.1.2 — Genesis Pack 3
+
+- Added API-Football client and synchronization endpoints.
